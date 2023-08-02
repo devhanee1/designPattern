@@ -5,6 +5,6 @@ State is a behavioral design pattern that lets an object alter its behavior when
 
 
 
-
+<hr>
 - Reference
 https://refactoring.guru/design-patterns/state
