@@ -4,4 +4,7 @@ State is a behavioral design pattern that lets an object alter its behavior when
 
 
 
-[Reference](https://refactoring.guru/design-patterns/state) https://refactoring.guru/design-patterns/state
+
+
+- Reference
+https://refactoring.guru/design-patterns/state
