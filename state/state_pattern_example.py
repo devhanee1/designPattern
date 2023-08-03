@@ -66,10 +66,11 @@ class ConcreteStateB(State):
         print("ConcreteStateB wants to change the state of the context.")
         self.context.transition(ConcreteStateA())
 
-print("hi")
 if __name__ == "__main__":
-    print("State sample")
+
     context = Context(ConcreteStateA())
 
     context.request1()
+    context.request1()
     context.request2()
+    context.request1()

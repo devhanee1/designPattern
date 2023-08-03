@@ -1,6 +1,7 @@
 # Definition
 State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class
 
+# behavior design pattern
 
 # Ugly code, not using state pattern
 - Code should be changed every time when new states arise, or behavior is changed.
