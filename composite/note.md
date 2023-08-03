@@ -54,7 +54,59 @@ same way with both simple or complex elements of the tree.
 ![image](https://github.com/devhanee1/designPattern/assets/37257706/b7f28b96-96e9-4224-84e7-04e7dda92a16)
 
 ```
+// The component interface declares common operations for both
+// simple and complex objects of a composition.
 
+interface Graphic is
+  method move(x,y)
+  method draw()
+
+class Dot implements Graphic is
+  field x, y
+
+  constructor Dot(x, y) {...}
+  method move(x, y) is
+    this.x += x, this.py += y
+  method draw() is
+    // draw a dot at X and Y
+
+class Circle extends Dot is
+  field radius
+  constructor Circle(x, y, radius) {...}
+
+class CompoundGraphic implements Graphc is
+  field children: array of Graphic
+
+  method add(child : Graphic) is
+    // Add a child to the array of children
+
+  method remove(child : Graphic) is
+  // Remove a  child reom the array of children
+
+  method move(x, y) is
+    foreach (child in children) do
+      child.move(x, y)
+  method draw() is
+    for each child compoent:
+      draw the componet
+
+class ImageEditor is
+    field all :CompundGraphic
+
+    method load() is
+      all = new CompoundGraphic()
+      all.add(new Dot(1,2))
+      all.add(new Circle(5, 3, 10))
+
+    method gourpSelected(components: array of Graphic) is
+      group =new CompoundGraphic()
+      foreach (component in components) do
+        groupd.add(compoent)
+        all.remove(component)
+      all.add(group)
+      all.draw()
+
+  
 
 ```
 
