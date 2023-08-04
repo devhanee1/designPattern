@@ -1,4 +1,9 @@
-# New Paper / Subscribe / Observer / ...
+# Usage
+- Newspaper
+- Subscribe
+- Observer
+- Graphical User Interface
+-  Custom Button class, and you want to let the clients hook some custom code to your button so that it fires whenever a user press a butonZ
 
 # Intent
 Observer is behavior design pattern that lets you define a subscription mechanism to notify multiple objects
@@ -28,3 +33,21 @@ sotre wastes resources notifying the wrong customers.
 It's crucial that all subscribers implement the same interface and that the publisher communicates with them
 only via that interface. This interface should declare the notification method along with a set of parameters that
 the publisher can use to pass some contextual data along with the notification. 
+
+# Real-World Analogy
+If you subscribe to a newspaper or magazine, you no longer need to go to the store to check if the next issue is available. 
+Instead, the publisher sends new issues directly to your mailbox right after publication or even in advance.
+
+The publisher maintains a list of subscribers and knows which magazines they’re interested in. 
+Subscribers can leave the list at any time when they wish to stop the publisher sending new magazine issues to them.
+
+
+Adding new subscribers to the program doesn’t require changes to existing publisher classes, 
+as long as they work with all subscribers through the same interface.
+
+
+# Structure
+![image](https://github.com/devhanee1/designPattern/assets/37257706/b3e96aa1-851a-4055-9512-6bed4e0553ba)
+
+
+
