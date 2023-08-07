@@ -6,7 +6,6 @@
 - Each node of the graph may represent a complex entity such as a city, but also more granular thing like industries, sightseeing areas, etc.
 - The nodes are connected with others if there's a road bwtween the real objects that they represent.
 - Under the hood, each node type is represneted by its own class, while each specific node is an object
-
 <hr>
 
 - At some point, you got a task to implement exporting the graph into XML format.
