@@ -15,4 +15,8 @@ There should be a way to go through each element of the collection without acces
 
 > How do you sequentially traverse elements of a complex data structure, such as a tree?
 
+> Adding more and more traversal algorithms to the collection gradually blurs its primary responsibility, which is efficient data storage.
+
+# Solution
+The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an iterator. 
 
