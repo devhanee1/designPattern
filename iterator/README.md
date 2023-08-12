@@ -20,3 +20,25 @@ There should be a way to go through each element of the collection without acces
 # Solution
 The main idea of the Iterator pattern is to extract the traversal behavior of a collection into a separate object called an iterator. 
 
+![image](https://github.com/devhanee1/designPattern/assets/37257706/46c3a7ae-fe04-417f-9967-f9f6580d2082)
+- iterator implement various traversal algorithms. Several iterator objects can traverse the same collection at the same time.
+
+In addtional to implementing the algorithm itself, an iterator object encapsulates all of the traversal details, such as the current position
+and how many elements are left till the end. Because of this, several iterators can go through the same collection at the same time, independently
+of each other. 
+
+All iterators must implement the same interface. This makes the client code compatible with any collection type of any traversal algorithm
+as long as there's a proper iterator. 
+
+# Structure
+![image](https://github.com/devhanee1/designPattern/assets/37257706/71f59d91-d8d9-46c3-820c-ead3273d3ac9)
+## Iterator
+interface declares the operations required for traversing a collection : Fetching the next element, retrieving the current position, restarting iteration, etc.
+
+## Concrete Iterators
+Implement specific algorithms for traversing a collection. 
+
+## Collection
+Interface declares one of multiple methods for getting iterators compatible with the collection.
+Return type of the methods must be declared as the iterator interface so that the concrete collection can return various kind of iterators. 
+
