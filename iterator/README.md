@@ -32,6 +32,7 @@ as long as there's a proper iterator.
 
 # Structure
 ![image](https://github.com/devhanee1/designPattern/assets/37257706/71f59d91-d8d9-46c3-820c-ead3273d3ac9)
+
 ## Iterator
 interface declares the operations required for traversing a collection : Fetching the next element, retrieving the current position, restarting iteration, etc.
 
